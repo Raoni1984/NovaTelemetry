@@ -10,7 +10,7 @@ The system processes telemetry batches ingested from distributed laser machinery
 
 1. **The Generator (Python Simulator):** Simulates real-time hardware status, periodically shifting from normal behavior to critical overheating anomalies.
 2. **The Ingestion Engine (.NET 8 Core Web API):** Sanitizes and validates data, ensuring proper global timestamps (`UTC`) and `UUID` identifiers.
-3. **The Cold Path (Amazon S3 Data Lake):** 100% of the raw JSON batch telemetry is serialized and written to an immutable S3 Bucket partitioned by date (`yyyy/MM/dd`) for long-term data science and computational biodiversity analytics.
+3. **The Cold Path (Amazon S3 Data Lake):** 100% of the raw JSON batch telemetry is serialized and written to an immutable S3 Bucket partitioned by date (`yyyy/MM/dd`) for long-term data science and computational analytics.
 4. **The Hot Path (Amazon RDS PostgreSQL):** Only telemetry rows indicating critical anomalies (Temperature > 200°C) are dynamically filtered and persisted using high-throughput batch insertion for real-time monitoring.
 
 ---
