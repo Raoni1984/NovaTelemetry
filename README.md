@@ -4,7 +4,7 @@ An end-to-end cloud-native IoT telemetry ingestion pipeline built to capture, an
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 The system processes telemetry batches ingested from distributed laser machinery through an automated simulation system.
 
@@ -15,7 +15,7 @@ The system processes telemetry batches ingested from distributed laser machinery
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Nova-data-platform/
@@ -60,7 +60,7 @@ Nova-data-platform/
 ```
 
 
-        ## Tech Stack
+## Tech Stack
 
 * **Backend Engine:** .NET 8 Web API (C#)
 * **ORM:** Entity Framework Core (EF Core)
