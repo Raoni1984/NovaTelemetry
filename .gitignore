@@ -1,0 +1,51 @@
+# ==========================================
+# .NET / C# Configuration
+# ==========================================
+[Bb]in/
+[Oo]bj/
+*.suo
+*.user
+*.sln.docstates
+.vs/
+.vscode/
+
+# Environment-specific configuration files (CRITICAL SECURITY)
+appsettings.json
+appsettings.Development.json
+
+# ==========================================
+# Python / Simulator Configuration
+# ==========================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==========================================
+# Terraform Configuration
+# ==========================================
+# Local .terraform directories
+.terraform/
+
+# .tfstate files (Contains infrastructure secrets and current cloud state)
+*.tfstate
+*.tfstate.*
+
+# Crash logs and plan binaries
+crash.log
+crash.*.log
+tfplan
+*.tfvars
+*.tfvars.json
+
+# ==========================================
+# OS / IDE General
+# ==========================================
+.DS_Store
+Thumbs.db
